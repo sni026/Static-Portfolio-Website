@@ -137,7 +137,6 @@ ul[role="list"] { list-style: none; }
   color: var(--clr-dark);
   line-height: 1.05;
   text-transform: uppercase;
-  white-space: nowrap;
 }
 
 /* ── Focus ─────────────────────────────────────────────────── */

@@ -117,6 +117,15 @@
 
 .hero-btn:active { transform: scale(0.97) !important; }
 
+.hero-btn-arrow {
+  margin-left: 0.4rem;
+  transition: transform var(--dur) var(--ease);
+}
+
+.hero-btn--primary:hover .hero-btn-arrow {
+  transform: translate(2px, -2px);
+}
+
 .hero-btn--primary {
   color: var(--clr-dark);
   background: var(--clr-lime);
@@ -128,44 +137,6 @@
   background: var(--clr-lime-hover);
   transform: translateY(-2px);
   box-shadow: 0 6px 32px rgba(var(--clr-lime-rgb), 0.35);
-}
-
-.hero-btn--ghost {
-  color: var(--white-80);
-  background: transparent;
-  border: 1.5px solid var(--white-20);
-}
-
-.hero-btn--ghost:hover {
-  color: #fff;
-  border-color: var(--white-50);
-  background: var(--white-5);
-  transform: translateY(-2px);
-}
-
-.hero-socials {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-  animation: fadeUp 0.55s 0.4s var(--ease) both;
-}
-
-.hero-social-link {
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 9px;
-  transition: color var(--dur) var(--ease),
-              border-color var(--dur) var(--ease),
-              background var(--dur) var(--ease),
-              transform var(--dur) var(--ease);
-}
-
-.hero-social-link:hover {
-  border-color: var(--white-50);
-  background: var(--white-10);
-  transform: translateY(-2px);
 }
 
 .hero-scroll-cue {

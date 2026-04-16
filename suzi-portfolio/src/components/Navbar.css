@@ -189,15 +189,14 @@
 .navbar-drawer-cta {
   display: block;
   margin-top: 1rem;
-  padding: 0.875rem;
+  padding: 0.5rem;
   text-align: center;
   font-weight: 600;
   font-size: var(--text-rg);
   color: var(--clr-dark);
   background: var(--clr-lime);
-  border-radius: 10px;
-  transition: background var(--dur) var(--ease),
-              transform var(--dur) var(--ease);
+  border-radius: 999px;
+  
 }
 
 .navbar-drawer-cta:hover {

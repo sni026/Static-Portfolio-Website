@@ -108,7 +108,7 @@ export default function Navbar() {
           tabIndex={menuOpen ? 0 : -1}
           onClick={(e) => handleLink(e, '#contact')}
         >
-          Hire me
+          Contact Me
         </a>
       </div>
     </header>

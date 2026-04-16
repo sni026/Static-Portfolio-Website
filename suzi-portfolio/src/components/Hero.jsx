@@ -1,7 +1,7 @@
 import heroImg from '../assets/hero.png'
 import heroMobileImg from '../assets/hero-mobile.png'
 import './Hero.css'
-import { SOCIALS, LOCATION, NAME, SUBTITLE, BIO } from '../constants'
+import { LOCATION, NAME, SUBTITLE, BIO } from '../constants'
 import { splitIntoParagraphs } from '../utils'
 
 const paragraphs = splitIntoParagraphs(BIO)
@@ -10,10 +10,6 @@ export default function Hero() {
   const scrollToProjects = (e) => {
     e.preventDefault()
     document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })
-  }
-  const scrollToContact = (e) => {
-    e.preventDefault()
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -53,26 +49,10 @@ export default function Hero() {
         <div className="hero-actions">
           <a href="#projects" className="hero-btn hero-btn--primary" onClick={scrollToProjects}>
             Explore Projects
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="hero-btn-arrow">
+              <path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </a>
-          <a href="#contact" className="hero-btn hero-btn--ghost" onClick={scrollToContact}>
-            Contact Me
-          </a>
-        </div>
-
-        {/* Socials */}
-        <div className="hero-socials">
-          {SOCIALS.map(({ label, href, icon }) => (
-            <a
-              key={label}
-              href={href}
-              className="hero-social-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={label}
-            >
-              <img src={icon} alt="" aria-hidden="true" />
-            </a>
-          ))}
         </div>
       </div>
 

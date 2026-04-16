@@ -1,5 +1,27 @@
 import githubIcon from './assets/github.png'
 import linkedinIcon from './assets/linkedin.png'
+import emailIcon from './assets/email.png'
+
+export const CONTACT_ITEMS = [
+  {
+    id: 'email',
+    icon: emailIcon,
+    label: 'siyini.suzi@outlook.com',
+    href: `mailto:siyini.suzi@outlook.com`,
+  },
+  {
+    id: 'linkedin',
+    icon: linkedinIcon,
+    label: 'linkedin.com/in/suzisyn',
+    href: 'https://linkedin.com/in/suzisyn',
+  },
+  {
+    id: 'github',
+    icon: githubIcon,
+    label: 'github.com/sni026',
+    href: 'https://github.com/sni026',
+  },
+]
 
 export const NAME = 'Suzi Ni';
 export const SUBTITLE = 'Graduate Developer';
@@ -37,18 +59,5 @@ export const EXPERIENCE = [
     description:
       `Customized Shopify theme templates using HTML and CSS to build product and promotional pages. Collaborated closely with marketing teams to align design decisions with brand standards, translating creative briefs into functional interfaces. Maintained product data accuracy across listings, descriptions, and media assets within the Shopify admin system.`,
     tags: ['HTML', 'CSS', 'Shopify', 'UI/UX', 'Cross-team Collaboration']  
-  },
-]
-
-export const SOCIALS = [
-  {
-    label: 'GitHub',
-    href: 'https://github.com/sni026',
-    icon: githubIcon
-  },
-  {
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/suzisyn/',
-    icon: linkedinIcon
   },
 ]
