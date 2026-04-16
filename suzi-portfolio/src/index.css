@@ -1,27 +1,42 @@
 /* ── Design tokens — modern light theme ────────────────────── */
 :root {
-  /* Palette */
-  --clr-bg:        #ffffff;
-  --clr-bg-alt:    #fafaf9;
-  --clr-surface:   #f4f2ff;
-  --clr-border:    #e8e6f0;
-  --clr-text:      #56526a;
-  --clr-heading:   #0d0b18;
-  --clr-muted:     #b0adc2;
+  /* Dark section theme (Hero, Experience, Navbar) */
+  --clr-light:      #f5f5f5;
+  --clr-dark:       #08080f;
+  --clr-dark-rgb:   8, 8, 15;
+  --clr-lime:       #c8f135;
+  --clr-lime-rgb:   200, 241, 53;
+  --clr-lime-hover: #d5f84e;
+  --clr-green:     #3e8e6e;
+  --clr-green-rgb: 63, 97, 45;
 
-  /* Accent — deep violet, adjusted for legibility on white */
-  --clr-accent:    #5b21b6;
-  --clr-accent-md: #7c3aed;
-  --clr-accent-lt: #ede9fe;
-  --clr-accent-glow: rgba(91, 33, 182, 0.12);
-  --clr-sky:       #0ea5e9;
+  /* White alpha scale (dark sections) */
+  --white-5:   rgba(255,255,255, 0.05);
+  --white-10:  rgba(255,255,255, 0.1);
+  --white-20:  rgba(255,255,255, 0.20);
+  --white-30:  rgba(255,255,255, 0.3);
+  --white-50:  rgba(255,255,255, 0.5);
+  --white-80:  rgba(255,255,255, 0.8);
 
-  /* Gradient */
-  --gradient: linear-gradient(135deg, #7c3aed 0%, #0ea5e9 100%);
+  /* Dark alpha scale (light sections) */
+  --dark-5:   rgba(8,8,15, 0.05);
+  --dark-10:  rgba(8,8,15, 0.1);
+  --dark-20:  rgba(8,8,15, 0.20);
+  --dark-30:  rgba(8,8,15, 0.3);
+  --dark-50:  rgba(8,8,15, 0.5);
+  --dark-80:  rgba(8,8,15, 0.8);
 
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  /* Font sizes */
+  --text-xs:     0.7rem;
+  --text-sm:     0.875rem;
+  --text-rg:     1rem;
+  --text-md:   clamp(1.25rem, 2vw, 1.75rem);
+  --text-lg:   clamp(2rem, 4vw, 3.5rem);
+  --text-xl:   clamp(2.4rem, 5.2vw, 4.4rem);
 
   /* Shadows — light theme: more neutral, less glow */
   --shadow-xs: 0 1px 2px rgba(0,0,0,.06);
@@ -77,12 +92,6 @@ body {
 }
 
 /* ── Typography ────────────────────────────────────────────── */
-h1, h2, h3, h4 {
-  font-family: var(--font-sans);
-  font-weight: 700;
-  color: var(--clr-heading);
-  line-height: 1.1;
-}
 
 a {
   color: var(--clr-accent);
@@ -100,6 +109,11 @@ ul[role="list"] { list-style: none; }
   width: 100%;
   max-width: 1080px;
   margin-inline: 1rem;
+  padding-inline: 2.5rem;
+}
+
+.container--full {
+  width: 100%;
   padding-inline: 2.5rem;
 }
 

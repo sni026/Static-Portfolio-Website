@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import code from '../../public/code.png'
 import './Navbar.css'
 
 const NAV_LINKS = [
@@ -6,7 +7,6 @@ const NAV_LINKS = [
   { label: 'Skills',     href: '#skills' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects',   href: '#projects' },
-  { label: 'Contact',    href: '#contact' },
 ]
 
 function scrollTo(href) {
@@ -51,7 +51,7 @@ export default function Navbar() {
           aria-label="Suzi Ni — scroll to top"
           onClick={(e) => handleLink(e, '#hero')}
         >
-          <span className="navbar-monogram" aria-hidden="true">SN</span>
+          <img src={code} className="navbar-monogram" aria-hidden="true" />
           <span className="navbar-wordmark">Suzi Ni</span>
         </a>
 
