@@ -9,9 +9,9 @@ export default function Experience() {
         {/* Section header */}
         <div className="experience-header">
           <div className="experience-header-left">
-            <p className="experience-eyebrow">— Experience</p>
-            <h2 className="experience-title">
-              WHERE I'VE<br />WORKED
+            <p className="eyebrow">— Experience</p>
+            <h2 className="title">
+              WHERE I'VE WORKED
             </h2>
           </div>
           <p className="experience-subtitle">

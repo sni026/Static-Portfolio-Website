@@ -1,0 +1,49 @@
+/* ─── Section ─────────────────────────────────────────── */
+.about {
+  background: var(--clr-light);
+  padding-block: 7rem;
+}
+
+/* ─── Two-column layout ───────────────────────────────── */
+.about-inner {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* ─── Left column ─────────────────────────────────────── */
+.about-left {
+  position: sticky;
+  top: 6rem;
+}
+
+/* ─── Right column ────────────────────────────────────── */
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  padding-top: 0.25rem;
+}
+
+.about-para {
+  font-size: var(--text-rg);
+  color: var(--dark-80);
+  line-height: 1.85;
+}
+
+/* ─── Responsive ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-left {
+    position: static;
+  }
+
+  .about {
+    padding-block: 5rem;
+  }
+}

@@ -8,26 +8,9 @@
 .experience-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   gap: 4rem;
   align-items: center;
-}
-
-.experience-eyebrow {
-  font-size: var(--text-sm);
-  color: var(--dark-50);
-  letter-spacing: 0.06em;
-  margin-bottom: 0.75rem;
-}
-
-.experience-title {
-  font-size: var(--text-lg);
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  color: var(--clr-dark);
-  line-height: 1.05;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .experience-subtitle {

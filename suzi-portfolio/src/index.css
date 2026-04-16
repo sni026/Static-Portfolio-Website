@@ -92,7 +92,6 @@ body {
 }
 
 /* ── Typography ────────────────────────────────────────────── */
-
 a {
   color: var(--clr-accent);
   text-decoration: none;
@@ -122,6 +121,23 @@ ul[role="list"] { list-style: none; }
     padding-inline: 1.25rem;
     margin-inline: 0rem;
   }
+}
+
+.eyebrow{
+  font-size: var(--text-sm);
+  color: var(--dark-50);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+.title{
+  font-size: var(--text-lg);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--clr-dark);
+  line-height: 1.05;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 /* ── Focus ─────────────────────────────────────────────────── */

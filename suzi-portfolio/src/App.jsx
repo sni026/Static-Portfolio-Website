@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import About from './components/About'
 import Experience from './components/Experience'
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
       <main>
         <Hero />
 
+        <About />
         {/* Placeholder sections — to be built next */}
-        <section id="about"    style={{ minHeight: '60vh', display: 'grid', placeItems: 'center', color: 'var(--clr-muted)' }}>About — coming soon</section>
         <section id="skills"   style={{ minHeight: '60vh', display: 'grid', placeItems: 'center', color: 'var(--clr-muted)' }}>Skills — coming soon</section>
         <Experience />
         <section id="projects" style={{ minHeight: '60vh', display: 'grid', placeItems: 'center', color: 'var(--clr-muted)' }}>Projects — coming soon</section>

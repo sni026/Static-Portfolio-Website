@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import code from '../../public/code.png'
+import code from '../assets/code.png'
 import './Navbar.css'
 
 const NAV_LINKS = [

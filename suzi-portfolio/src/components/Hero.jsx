@@ -1,7 +1,10 @@
 import heroImg from '../assets/hero.png'
 import heroMobileImg from '../assets/hero-mobile.png'
 import './Hero.css'
-import { SOCIALS, LOCATION, NAME, SUBTITLE, BIO1, BIO2, BIO3 } from '../constants'
+import { SOCIALS, LOCATION, NAME, SUBTITLE, BIO } from '../constants'
+import { splitIntoParagraphs } from '../utils'
+
+const paragraphs = splitIntoParagraphs(BIO)
 
 export default function Hero() {
   const scrollToProjects = (e) => {
@@ -38,9 +41,12 @@ export default function Hero() {
 
         {/* Bio */}
         <p className="hero-bio">
-          {BIO1}<br /><br />
-          {BIO2}<br /><br />
-          {BIO3}
+          {paragraphs.map((p, i) => (
+            <>
+            <p key={i}>{p}</p>
+              <br />
+            </>
+            ))}
         </p>
 
         {/* CTAs */}
