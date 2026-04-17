@@ -42,7 +42,7 @@ export const EXPERIENCE = [
     period: 'Feb 2026 — Apr 2026',
     description:
     `Built full-stack features for a web portal including notification systems, admin tools, and automated feedback workflows. Worked in team across the full development lifecycle, from design documentation in Confluence to testing. Collaborated closely with team members to troubleshoot bugs, refine implementations, and improve code reusability.`,
-    tags: ['React', 'Ruby on Rails', 'PostgreSQL', 'RESTful APIs', 'Sidekiq', 'Agile', 'Confluence', 'Jira', 'Full-Stack Development', 'Testing']  
+    tags: ['React', 'Ruby on Rails', 'PostgreSQL', 'RESTful APIs', 'Agile/Scrum', 'Confluence', 'Jira', 'Full-Stack Development', 'Testing', 'Documentation',]  
   },
   {
     company: 'Infor',
@@ -50,7 +50,7 @@ export const EXPERIENCE = [
     period: 'Sept 2021 — Nov 2023',
     description:
     `Worked with manufacturing clients to gather requirements and configure ERP finance and supply chain modules, bridging the gap between stakeholders and development teams. Translated business needs into functional specs, produced structured documentation, and led UAT activities — from writing test cases to coordinating validation and resolving issues with stakeholders.`,
-    tags: ['ERP', 'Business Analysis', 'Requirements Gathering', 'Functional Specifications', 'UAT', 'Test Case Development', 'Stakeholder Communication', 'Cross-team Collaboration']
+    tags: ['ERP', 'Business Analysis', 'Requirements Gathering', 'Functional Specifications', 'UAT', 'Test Case Development', 'Stakeholder Communication', 'Team Collaboration']
   },
   {
     company: 'NZ Honey Group',
@@ -58,6 +58,6 @@ export const EXPERIENCE = [
     period: 'May 2024 —  Present',
     description:
       `Customized Shopify theme templates using HTML and CSS to build product and promotional pages. Collaborated closely with marketing teams to align design decisions with brand standards, translating creative briefs into functional interfaces. Maintained product data accuracy across listings, descriptions, and media assets within the Shopify admin system.`,
-    tags: ['HTML', 'CSS', 'Shopify', 'UI/UX', 'Cross-team Collaboration']  
+    tags: ['UI/UX','Shopify','Cross-platform Integration']  
   },
 ]

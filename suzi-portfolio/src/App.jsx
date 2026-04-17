@@ -12,10 +12,9 @@ function App() {
         <Hero />
 
         <About />
-        {/* Placeholder sections — to be built next */}
         <section id="skills"   style={{ minHeight: '60vh', display: 'grid', placeItems: 'center', color: 'var(--clr-muted)' }}>Skills — coming soon</section>
-        <Experience />
         <section id="projects" style={{ minHeight: '60vh', display: 'grid', placeItems: 'center', color: 'var(--clr-muted)' }}>Projects — coming soon</section>
+        <Experience />
         <Contact />
       </main>
     </>

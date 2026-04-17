@@ -139,6 +139,20 @@
   box-shadow: 0 6px 32px rgba(var(--clr-lime-rgb), 0.35);
 }
 
+.hero-btn--ghost {
+  color: var(--white-80);
+  background: transparent;
+  border: 1px solid var(--white-20);
+  border-radius: 999px;
+}
+
+.hero-btn--ghost:hover {
+  color: var(--white-80);
+  border-color: var(--white-50);
+  background: var(--white-5);
+  transform: translateY(-2px);
+}
+
 .hero-scroll-cue {
   position: absolute;
   bottom: 2.25rem;

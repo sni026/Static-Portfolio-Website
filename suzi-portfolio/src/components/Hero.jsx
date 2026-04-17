@@ -3,6 +3,7 @@ import heroMobileImg from '../assets/hero-mobile.png'
 import './Hero.css'
 import { LOCATION, NAME, SUBTITLE, BIO } from '../constants'
 import { splitIntoParagraphs } from '../utils'
+import resume from '../assets/Suzi_Ni_Resume.pdf'
 
 const paragraphs = splitIntoParagraphs(BIO)
 
@@ -10,6 +11,14 @@ export default function Hero() {
   const scrollToProjects = (e) => {
     e.preventDefault()
     document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const downloadResume = (e) => {
+    e.preventDefault()
+    const resumeUrl = resume
+    setTimeout(() => {
+      window.open(resumeUrl, '_blank')
+    }, [200]);
   }
 
   return (
@@ -53,7 +62,11 @@ export default function Hero() {
               <path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
+          <a href={resume} className="hero-btn hero-btn--ghost" onClick={downloadResume}>
+            My Resume
+          </a>
         </div>
+        
       </div>
 
       {/* Scroll cue */}
