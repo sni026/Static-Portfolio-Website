@@ -117,27 +117,6 @@
 
 .hero-btn:active { transform: scale(0.97) !important; }
 
-.hero-btn-arrow {
-  margin-left: 0.4rem;
-  transition: transform var(--dur) var(--ease);
-}
-
-.hero-btn--primary:hover .hero-btn-arrow {
-  transform: translate(2px, -2px);
-}
-
-.hero-btn--primary {
-  color: var(--clr-dark);
-  background: var(--clr-lime);
-  box-shadow: 0 2px 24px rgba(var(--clr-lime-rgb), 0.22);
-}
-
-.hero-btn--primary:hover {
-  color: var(--clr-dark);
-  background: var(--clr-lime-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 32px rgba(var(--clr-lime-rgb), 0.35);
-}
 
 .hero-btn--ghost {
   color: var(--white-80);

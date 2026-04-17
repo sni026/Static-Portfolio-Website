@@ -1,9 +1,3 @@
-/* ─── Section ─────────────────────────────────────────── */
-.experience {
-  background: var(--clr-light);
-  padding-block: 7rem;
-}
-
 /* ─── Header ──────────────────────────────────────────── */
 .experience-header {
   display: flex;

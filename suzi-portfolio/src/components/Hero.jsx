@@ -4,6 +4,7 @@ import './Hero.css'
 import { LOCATION, NAME, SUBTITLE, BIO } from '../constants'
 import { splitIntoParagraphs } from '../utils'
 import resume from '../assets/Suzi_Ni_Resume.pdf'
+import YellowArrowButton from './shared/YellowArrowButton'
 
 const paragraphs = splitIntoParagraphs(BIO)
 
@@ -45,23 +46,17 @@ export default function Hero() {
         </h1>
 
         {/* Bio */}
-        <p className="hero-bio">
+        <div className="hero-bio">
           {paragraphs.map((p, i) => (
-            <>
             <p key={i}>{p}</p>
-              <br />
-            </>
-            ))}
-        </p>
+          ))}
+        </div>
 
         {/* CTAs */}
         <div className="hero-actions">
-          <a href="#projects" className="hero-btn hero-btn--primary" onClick={scrollToProjects}>
+          <YellowArrowButton href="#projects" onClick={scrollToProjects}>
             Explore Projects
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" className="hero-btn-arrow">
-              <path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </a>
+          </YellowArrowButton>
           <a href={resume} className="hero-btn hero-btn--ghost" onClick={downloadResume}>
             My Resume
           </a>

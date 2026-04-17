@@ -6,8 +6,8 @@ const paragraphs = splitIntoParagraphs(ABOUT_ME)
 
 export default function About() {
   return (
-    <section id="about" className="about">
-      <div className="container--full">
+    <section id="about" className="section-container">
+      <div className="content-container">
         <div className="about-inner">
 
           <div className="about-left">

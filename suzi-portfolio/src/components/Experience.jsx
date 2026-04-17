@@ -3,8 +3,8 @@ import { EXPERIENCE, EXPERIENCE_SUBTITLE } from '../constants'
 
 export default function Experience() {
   return (
-    <section id="experience" className="experience">
-      <div className="container--full">
+    <section id="experience" className="section-container">
+      <div className="content-container">
 
         {/* Section header */}
         <div className="experience-header">

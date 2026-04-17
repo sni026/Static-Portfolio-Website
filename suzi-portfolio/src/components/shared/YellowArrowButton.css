@@ -1,0 +1,36 @@
+.yellow-arrow-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.625rem;
+  font-size: var(--text-rg);
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--clr-dark);
+  background: var(--clr-lime);
+  box-shadow: 0 2px 24px rgba(var(--clr-lime-rgb), 0.22);
+  transition: transform var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease),
+              background var(--dur) var(--ease);
+}
+
+.yellow-arrow-btn:hover {
+  color: var(--clr-dark);
+  background: var(--clr-lime-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 32px rgba(var(--clr-lime-rgb), 0.35);
+}
+
+.yellow-arrow-btn:active {
+  transform: scale(0.97);
+}
+
+.yellow-arrow-btn-icon {
+  margin-left: 0.4rem;
+  transition: transform var(--dur) var(--ease);
+}
+
+.yellow-arrow-btn:hover .yellow-arrow-btn-icon {
+  transform: translate(2px, -2px);
+}

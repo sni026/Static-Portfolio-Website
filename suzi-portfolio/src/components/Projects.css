@@ -1,0 +1,172 @@
+/* ─── Header ──────────────────────────────────────────── */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+  gap: 1.5rem;
+}
+
+/* "View All" pill button */
+.projects-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--clr-lime);
+  color: var(--clr-dark);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition:
+    background var(--dur) var(--ease),
+    transform var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease);
+}
+
+.projects-view-all:hover {
+  background: var(--clr-lime-hover);
+  color: var(--clr-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(var(--clr-lime-rgb), 0.3);
+}
+
+/* ─── Masonry columns ─────────────────────────────────── */
+.projects-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.projects-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ─── Card ────────────────────────────────────────────── */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.35s var(--ease);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ─── Card image area ─────────────────────────────────── */
+.project-card-image {
+  position: relative;
+  aspect-ratio: var(--ratio, 16/10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Subtle noise / texture overlay */
+.project-card-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 30%, rgba(255,255,255,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ─── Icon ────────────────────────────────────────────── */
+.project-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.4s var(--ease),
+    opacity 0.3s var(--ease);
+}
+
+.project-card:hover .project-card-icon {
+  transform: scale(1.1) translateY(-3px);
+}
+
+/* ─── Arrow badge ─────────────────────────────────────── */
+.project-card-link {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: var(--clr-lime);
+  color: var(--clr-dark);
+  display: grid;
+  place-items: center;
+  transition:
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+
+.project-card:hover .project-card-link {
+  transform: rotate(45deg);
+  box-shadow: 0 4px 16px rgba(var(--clr-lime-rgb), 0.45);
+}
+
+/* ─── Card footer ─────────────────────────────────────── */
+.project-card-footer {
+  padding: 1.1rem 0.5rem 0.5rem;
+}
+
+.project-card-title {
+  font-size: var(--text-md);
+  font-weight: 800;
+  color: var(--clr-dark);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+}
+
+.project-card-meta {
+  font-size: var(--text-rg);
+  color: var(--dark-50);
+  letter-spacing: 0.04em;
+}
+
+.project-meta-dot {
+  opacity: 0.4;
+}
+
+/* ─── Responsive ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  .projects-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .projects {
+    padding-block: 5rem;
+  }
+
+  .projects-cols {
+    grid-template-columns: 1fr;
+  }
+
+  /* on mobile, stack all cards single-column in natural order */
+  .projects-col {
+    display: contents;
+  }
+
+  .projects-col .project-card {
+    display: flex;
+  }
+}

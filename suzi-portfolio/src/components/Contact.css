@@ -1,9 +1,3 @@
-/* ─── Section ─────────────────────────────────────────── */
-.contact {
-  background: var(--clr-light);
-  padding-block: 7rem;
-}
-
 /* ─── Two-column layout ───────────────────────────────── */
 .contact-inner {
   display: grid;

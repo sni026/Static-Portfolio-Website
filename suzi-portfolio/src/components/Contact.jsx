@@ -4,8 +4,8 @@ import { CONTACT_ITEMS } from '../constants'
 
 export default function Contact() {
   return (
-    <section id="contact" className="contact">
-      <div className="container--full">
+    <section id="contact" className="section-container">
+      <div className="content-container">
         <div className="contact-inner">
 
           {/* ── Left ── */}
