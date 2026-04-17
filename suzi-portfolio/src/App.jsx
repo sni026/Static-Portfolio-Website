@@ -14,8 +14,8 @@ function App() {
 
         <About />
         <section id="skills" style={{ minHeight: '60vh', display: 'grid', placeItems: 'center', color: 'var(--clr-muted)' }}>Skills — coming soon</section>
-        <Projects />
         <Experience />
+        <Projects />
         <Contact />
       </main>
     </>
