@@ -86,9 +86,13 @@
   width: 650px;
   font-size: var(--text-rg);
   color: var(--white-50);
-  line-height: 1.75;
+  line-height: 1.85;
   margin-top: 1.5rem;
   animation: fadeUp 0.55s 0.2s var(--ease) both;
+}
+
+.hero-bio p {
+  margin-bottom: 1rem;
 }
 
 .hero-actions {

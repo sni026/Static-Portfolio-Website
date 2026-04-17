@@ -1,5 +1,6 @@
 import './Experience.css'
 import { EXPERIENCE, EXPERIENCE_SUBTITLE } from '../constants'
+import { splitIntoParagraphs } from '../utils'
 
 export default function Experience() {
   return (
@@ -28,7 +29,11 @@ export default function Experience() {
                 <span className="experience-card-role">{item.company}</span>
               </div>
               <h3 className="experience-card-company">{item.role}</h3>
-              <p className="experience-card-desc">{item.description}</p>
+              <div className="experience-card-desc">
+                {splitIntoParagraphs(item.description).map((para, j) => (
+                  <p key={j}>{para.trim()}</p>
+                ))}
+              </div>
               <div className="experience-card-tags">
                 {item.tags.map((tag) => (
                   <span key={tag} className="experience-tag">{tag}</span>
