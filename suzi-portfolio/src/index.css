@@ -7,8 +7,8 @@
   --clr-lime:       #c8f135;
   --clr-lime-rgb:   200, 241, 53;
   --clr-lime-hover: #d5f84e;
-  --clr-green:     #3e8e6e;
-  --clr-green-rgb: 63, 97, 45;
+  --clr-green:     #98BE0E;
+  --clr-green-rgb: 152, 190, 14;
 
   /* White alpha scale (dark sections) */
   --white-5:   rgba(255,255,255, 0.05);

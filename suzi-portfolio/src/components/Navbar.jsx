@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import code from '../assets/code.png'
+import s from '../assets/s.png'
 import './Navbar.css'
 
 const NAV_LINKS = [
@@ -51,7 +51,7 @@ export default function Navbar() {
           aria-label="Suzi Ni — scroll to top"
           onClick={(e) => handleLink(e, '#hero')}
         >
-          <img src={code} className="navbar-monogram" aria-hidden="true" />
+          <img src={s} className="navbar-monogram" aria-hidden="true" />
           <span className="navbar-wordmark">Suzi Ni</span>
         </a>
 

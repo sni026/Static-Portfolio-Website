@@ -36,11 +36,12 @@ Let's build something meaningful.`;
 export const LOCATION = 'Based in Auckland, NZ';
 
 // About
-export const ABOUT_ME = `My path into development started with a question I couldn't stop asking: what's actually happening behind the system?
-As an ERP consultant, I spent years bridging business and technology, but every time I walked out of a meeting with developers, I left wanting to understand what they were actually doing. So I went back to university, pursued my MIT, and started developing. I fell in love with it. Not just the coding itself, but the whole nature of it — there's always something new to learn, always a harder problem waiting. That never gets old for me.
-The more I got into it, the more I realized it wasn't a big leap from consulting at all. What I loved about that job was seeing technology actually solve a business problem. Turns out that's exactly what I love about building software too. Same instinct, different seat.
-I'm a developer at heart, though what really pulls me is what's happening under the hood — understanding how systems are structured, why decisions were made, and how everything fits together. That's where I feel most at home.
-What's different about me is that I've been on both sides of the table. I know how businesses think, where communication breaks down, and what it actually takes to build something that solves the right problem, not just a problem.`;
+export const ABOUT_ME = `My path into development started with a question: [what's actually happening behind the system?]
+As an ERP consultant, I spent time bridging business and technology, but every time I walked out of a meeting with developers, I left wanting to understand what they were doing. So I went back to university, pursued my MIT, and started developing. I love it, not just the coding, but the nature of it. [There's always something new to learn, always a challenge waiting.]
+The more I got into it, the more I realised it wasn't so different from consulting. [Seeing technology solve a real problem, that's what excited me then, and it's what drives me now.]`;
+
+export const ABOUT_ME_2 = `What's different about me is that I've been on both sides of the table. [I understand how businesses think, why requirements were raised, how systems are structured, and how everything fits together.]
+I bring that [perspective] to my development work, and makes me a better developer.`;
 
 // Experience
 export const EXPERIENCE_SUBTITLE = `From configuring ERP systems for manufacturing clients to building full-stack web features and shaping Shopify storefronts — a through line of turning complex requirements into clean, working software.`;

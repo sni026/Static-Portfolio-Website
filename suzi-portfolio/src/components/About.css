@@ -6,6 +6,10 @@
   align-items: start;
 }
 
+.second-section{
+  margin-top: 3rem;
+}
+
 /* ─── Left column ─────────────────────────────────────── */
 .about-left {
   position: sticky;
@@ -24,6 +28,12 @@
   font-size: var(--text-rg);
   color: var(--dark-80);
   line-height: 1.85;
+}
+
+.highlight {
+  color: var(--clr-dark);
+  font-weight: 500;
+  border-bottom: 1.5px solid var(--clr-green);
 }
 
 /* ─── Responsive ──────────────────────────────────────── */
