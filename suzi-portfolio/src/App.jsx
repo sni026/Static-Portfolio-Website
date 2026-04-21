@@ -4,6 +4,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
         <Hero />
 
         <About />
-        <section id="skills" style={{ minHeight: '60vh', display: 'grid', placeItems: 'center', color: 'var(--clr-muted)' }}>Skills — coming soon</section>
         <Experience />
+        <Skills />
         <Projects />
         <Contact />
       </main>

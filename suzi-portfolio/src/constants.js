@@ -79,6 +79,17 @@ export const EXPERIENCE = [
   },
 ]
 
+// Skills
+export const SKILLS = [
+  { category: 'Languages',       items: ['JavaScript', 'TypeScript', 'Ruby', 'Java', 'Python'] },
+  { category: 'Frontend',        items: ['React', 'React Native','Svelte', 'Tailwind CSS', 'MUI', 'Shopify'] },
+  { category: 'Backend',         items: ['Node.js', 'Ruby on Rails', 'RESTful APIs'] },
+  { category: 'Databases',       items: ['PostgreSQL', 'MongoDB'] },
+  { category: 'Cloud & Infra',   items: ['AWS'] },
+  { category: 'AI & Automation', items: ['LLM Integration', 'Agentic AI', 'AWS Bedrock'] },
+  { category: 'Tools',           items: ['Agile/Scrum', 'Jira', 'Confluence'] },
+]
+
 // Projects
 export const PROJECTS = [
   {
