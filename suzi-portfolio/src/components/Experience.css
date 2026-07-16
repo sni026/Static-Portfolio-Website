@@ -103,6 +103,20 @@
   line-height: 1.75;
   max-width: 100%;
   margin-bottom: 1.375rem;
+  padding-left: 1.2rem;
+}
+
+.experience-card-desc li {
+  padding-left: 0.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.experience-card-desc li:last-child {
+  margin-bottom: 0;
+}
+
+.experience-card-desc li::marker {
+  color: var(--clr-green);
 }
 
 /* Tags */

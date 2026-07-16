@@ -3,7 +3,7 @@ import heroMobileImg from '../assets/hero-mobile.png'
 import './Hero.css'
 import { LOCATION, NAME, SUBTITLE, BIO } from '../constants'
 import { splitIntoParagraphs } from '../utils'
-import resume from '../assets/Suzi_Ni_Resume.pdf'
+import resume from '../assets/Suzi_Resume.pdf'
 import YellowArrowButton from './shared/YellowArrowButton'
 
 const paragraphs = splitIntoParagraphs(BIO)

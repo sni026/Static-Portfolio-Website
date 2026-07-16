@@ -29,11 +29,11 @@ export default function Experience() {
                 <span className="experience-card-role">{item.company}</span>
               </div>
               <h3 className="experience-card-company">{item.role}</h3>
-              <div className="experience-card-desc">
+              <ul className="experience-card-desc">
                 {splitIntoParagraphs(item.description).map((para, j) => (
-                  <p key={j}>{para.trim()}</p>
+                  <li key={j}>{para.trim()}</li>
                 ))}
-              </div>
+              </ul>
               <div className="experience-card-tags">
                 {item.tags.map((tag) => (
                   <span key={tag} className="experience-tag">{tag}</span>

@@ -29,65 +29,74 @@ export const CONTACT_ITEMS = [
 
 // Hero
 export const NAME = 'Suzi Ni';
-export const SUBTITLE = 'Graduate Developer';
+export const SUBTITLE = 'Software Developer';
 export const BIO = `I speak both languages: business and code.
-With a background in ERP consulting and full-stack development across React, Node.js, and AWS, I build software that solves the right problem. Currently finishing my Master's in IT at the University of Auckland and ready for what's next.
+I build full-stack web applications, APIs, cloud solutions, and business systems using React, C#/.NET, Node.js, PostgreSQL, and AWS. Backed by more than two years in business analysis, I turn complex requirements into practical, scalable software.
 Let's build something meaningful.`;
 export const LOCATION = 'Based in Auckland, NZ';
 
 // About
 export const ABOUT_ME = `My path into development started with a question: [what's actually happening behind the system?]
-As an ERP consultant, I spent time bridging business and technology, but every time I walked out of a meeting with developers, I left wanting to understand what they were doing. So I went back to university, pursued my MIT, and started developing. I love it, not just the coding, but the nature of it. [There's always something new to learn, always a challenge waiting.]
-The more I got into it, the more I realised it wasn't so different from consulting. [Seeing technology solve a real problem, that's what excited me then, and it's what drives me now.]`;
+As an ERP Business Analyst, I bridged business and technology, but every conversation with developers made me want to understand how the systems themselves were built. So I returned to university, completed a Master of Information Technology, and started building software of my own. [There's always something new to learn and another worthwhile problem to solve.]
+The deeper I got into development, the more I saw its connection to consulting. [Seeing technology solve a real problem excited me then, and it still drives me now.]`;
 
 export const ABOUT_ME_2 = `What's different about me is that I've been on both sides of the table. [I understand how businesses think, why requirements were raised, how systems are structured, and how everything fits together.]
-I bring that [perspective] to my development work, and makes me a better developer.`;
+Today, I combine that perspective with hands-on experience across frontend, backend, cloud, databases, integrations, and workflow automation. [I can move from understanding the business need to designing and delivering a solution], while collaborating effectively with both technical and non-technical teams.`;
 
 // Experience
-export const EXPERIENCE_SUBTITLE = `From configuring ERP systems for manufacturing clients to building full-stack web features and shaping Shopify storefronts — a through line of turning complex requirements into clean, working software.`;
+export const EXPERIENCE_SUBTITLE = `From business analysis and full-stack development to cloud integrations and business system automation — a consistent focus on turning complex requirements into reliable, useful software.`;
 export const EXPERIENCE = [
   {
+    company: 'Amplifly Studio',
+    role: 'Business Systems Developer',
+    period: 'Apr 2026 — Present',
+    description:
+    `Design business systems that support property sales, construction, warranty, maintenance, and homeowner service workflows.
+    Build relational Airtable architectures, Softr customer portals, REST API integrations, webhooks, and custom JavaScript automations.
+    Develop multi-step workflows with Make.com and Airtable Automations to streamline reporting, notifications, approvals, and day-to-day operations.`,
+    tags: ['Business Systems', 'Airtable', 'Softr', 'Make.com', 'JavaScript', 'RESTful APIs', 'Webhooks', 'Workflow Automation']
+  },
+  {
     company: 'Datacom',
-    role: 'Software Development Intern',
+    role: 'Web Development Intern',
     period: 'Feb 2026 — Apr 2026',
     description:
-    `Built full-stack features for a web portal including notification systems, admin tools, and automated feedback workflows. 
-    Worked in team across the full development lifecycle, from design documentation in Confluence to testing. 
-    Collaborated closely with team members to troubleshoot bugs, refine implementations, and improve code reusability.`,
-    tags: ['React', 'Ruby on Rails', 'PostgreSQL', 'RESTful APIs', 'Agile/Scrum', 'Confluence', 'Jira', 'Full-Stack Development', 'Testing', 'Documentation',]  
+    `Developed backend services and RESTful APIs using Ruby on Rails, PostgreSQL, and Sidekiq for CRUD operations and asynchronous jobs.
+    Built responsive React interfaces with JavaScript and MUI, including admin pages, notification banners, and customer feedback features.
+    Collaborated across the Agile development lifecycle through planning, code reviews, automated testing, documentation, and UAT.`,
+    tags: ['React', 'Ruby on Rails', 'PostgreSQL', 'Sidekiq', 'RESTful APIs', 'MUI', 'Agile/Scrum', 'Testing']
+  },
+  {
+    company: 'Happy Valley Honey',
+    role: 'Shopify Developer',
+    period: 'Jul 2025 — Apr 2026',
+    description:
+    `Developed reusable Shopify theme components, product pages, and collection pages using Liquid, JavaScript, HTML, and CSS.
+    Integrated third-party services for payments, marketing, inventory management, and operational workflows.
+    Improved page speed and mobile usability through responsive design, code optimisation, and efficient asset loading.`,
+    tags: ['Shopify', 'Liquid', 'JavaScript', 'HTML', 'CSS', 'API Integration', 'Responsive Design', 'Performance']
   },
   {
     company: 'Infor',
-    role: 'Associate ERP Consultant',
+    role: 'Associate Business Analyst',
     period: 'Sept 2021 — Nov 2023',
     description:
-    `Worked with manufacturing clients to gather requirements and configure ERP finance and supply chain modules.
-    Bridged the gap between stakeholders and development teams. 
-    Translated business needs into functional specs, produced structured documentation. 
-    Led UAT activities from writing test cases to coordinating validation and resolving issues with stakeholders.`,
-    tags: ['ERP', 'Business Analysis', 'Requirements Gathering', 'Functional Specifications', 'UAT', 'Test Case Development', 'Stakeholder Communication', 'Team Collaboration']
-  },
-  {
-    company: 'NZ Honey Group',
-    role: "Marketing and Sales Assistant",
-    period: 'May 2024 —  Present',
-    description:
-      `Customized Shopify theme templates using HTML and CSS to build product and promotional pages. 
-      Collaborated closely with marketing teams to align design decisions with brand standards, translating creative briefs into functional interfaces. 
-      Maintained product data accuracy across listings, descriptions, and media assets within the Shopify admin system.`,
-    tags: ['UI/UX','Shopify','Cross-platform Integration']  
+    `Partnered with finance, procurement, and supply chain stakeholders to define requirements for ERP implementation and enhancement projects.
+    Translated business needs into functional specifications, process flows, data mappings, configurations, and UAT materials.
+    Led workshops, solution demonstrations, testing, defect resolution, training, go-live, and post-implementation support.`,
+    tags: ['ERP', 'Business Analysis', 'Requirements Gathering', 'Functional Specifications', 'Process Mapping', 'UAT', 'Stakeholder Management']
   },
 ]
 
 // Skills
 export const SKILLS = [
-  { category: 'Languages',       items: ['JavaScript', 'TypeScript', 'Ruby', 'Java', 'Python'] },
-  { category: 'Frontend',        items: ['React', 'React Native','Svelte', 'Tailwind CSS', 'MUI', 'Shopify'] },
-  { category: 'Backend',         items: ['Node.js', 'Ruby on Rails', 'RESTful APIs'] },
-  { category: 'Databases',       items: ['PostgreSQL', 'MongoDB'] },
-  { category: 'Cloud & Infra',   items: ['AWS'] },
-  { category: 'AI & Automation', items: ['LLM Integration', 'Agentic AI', 'AWS Bedrock'] },
-  { category: 'Tools',           items: ['Agile/Scrum', 'Jira', 'Confluence'] },
+  { category: 'Languages',       items: ['Java', 'C#', 'JavaScript', 'TypeScript', 'Python'] },
+  { category: 'Frontend',        items: ['React', 'React Native', 'Next.js', 'Svelte', 'MUI', 'Shopify'] },
+  { category: 'Backend & APIs',  items: ['Node.js', 'Ruby on Rails', 'ASP.NET Core MVC', 'RESTful APIs', 'Microservices'] },
+  { category: 'Databases',       items: ['PostgreSQL', 'SQL Server', 'MongoDB'] },
+  { category: 'Cloud & DevOps',  items: ['AWS Lambda', 'EC2', 'S3', 'AWS Bedrock', 'Docker', 'Git', 'CI/CD'] },
+  { category: 'Automation',      items: ['Airtable', 'Softr', 'Make.com', 'Webhooks', 'Workflow Automation'] },
+  { category: 'Ways of Working', items: ['Agile/Scrum', 'Business Analysis', 'UAT', 'Jira', 'Confluence'] },
 ]
 
 // Projects
@@ -102,8 +111,8 @@ export const PROJECTS = [
   },
   {
     id: 'insurance-automation',
-    title: 'Insurance Claims Automation ',
-    tags: ['AWS Native', 'Confidence Scoring Agent', 'LLM Evaluation', 'Agentic AI'],
+    title: 'Cloud-Native Insurance Claims Automation',
+    tags: ['AWS', 'React', 'Node.js', 'MongoDB', 'Agentic AI'],
     image: insuranceAutomationImage,
     imageRatio: '3/4',
     href: '#',

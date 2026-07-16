@@ -1,14 +1,21 @@
-/* ── Design tokens — modern light theme ────────────────────── */
+/* ── Design tokens — cool blue theme ──────────────────────── */
 :root {
   /* Dark section theme (Hero, Experience, Navbar) */
-  --clr-light:      #f5f5f5;
-  --clr-dark:       #08080f;
-  --clr-dark-rgb:   8, 8, 15;
-  --clr-lime:       #c8f135;
-  --clr-lime-rgb:   200, 241, 53;
-  --clr-lime-hover: #d5f84e;
-  --clr-green:     #98BE0E;
-  --clr-green-rgb: 152, 190, 14;
+  --clr-light:      #f4f8ff;
+  --clr-dark:       #071426;
+  --clr-dark-rgb:   7, 20, 38;
+  --clr-lime:       #78a9ff;
+  --clr-lime-rgb:   120, 169, 255;
+  --clr-lime-hover: #9bc0ff;
+  --clr-green:      #2563d9;
+  --clr-green-rgb:  37, 99, 217;
+
+  /* General aliases */
+  --clr-bg:         var(--clr-light);
+  --clr-text:       var(--clr-dark);
+  --clr-accent:     var(--clr-green);
+  --clr-accent-md:  #1d4fb3;
+  --clr-border:     rgba(var(--clr-dark-rgb), 0.16);
 
   /* White alpha scale (dark sections) */
   --white-5:   rgba(255,255,255, 0.05);
@@ -19,12 +26,12 @@
   --white-80:  rgba(255,255,255, 0.8);
 
   /* Dark alpha scale (light sections) */
-  --dark-5:   rgba(8,8,15, 0.05);
-  --dark-10:  rgba(8,8,15, 0.1);
-  --dark-20:  rgba(8,8,15, 0.20);
-  --dark-30:  rgba(8,8,15, 0.3);
-  --dark-50:  rgba(8,8,15, 0.5);
-  --dark-80:  rgba(8,8,15, 0.8);
+  --dark-5:   rgba(var(--clr-dark-rgb), 0.05);
+  --dark-10:  rgba(var(--clr-dark-rgb), 0.1);
+  --dark-20:  rgba(var(--clr-dark-rgb), 0.20);
+  --dark-30:  rgba(var(--clr-dark-rgb), 0.3);
+  --dark-50:  rgba(var(--clr-dark-rgb), 0.58);
+  --dark-80:  rgba(var(--clr-dark-rgb), 0.86);
 
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -39,10 +46,10 @@
   --text-xl:   clamp(2.4rem, 5.2vw, 4.4rem);
 
   /* Shadows — light theme: more neutral, less glow */
-  --shadow-xs: 0 1px 2px rgba(0,0,0,.06);
-  --shadow-sm: 0 1px 6px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
-  --shadow-md: 0 4px 16px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.04);
-  --shadow-lg: 0 12px 40px rgba(0,0,0,.10), 0 4px 12px rgba(0,0,0,.05);
+  --shadow-xs: 0 1px 2px rgba(7,20,38,.06);
+  --shadow-sm: 0 1px 6px rgba(7,20,38,.08), 0 1px 2px rgba(7,20,38,.04);
+  --shadow-md: 0 4px 16px rgba(7,20,38,.09), 0 1px 4px rgba(7,20,38,.04);
+  --shadow-lg: 0 12px 40px rgba(37,99,217,.12), 0 4px 12px rgba(7,20,38,.05);
 
   /* Transitions */
   --ease: cubic-bezier(0.4, 0, 0.2, 1);

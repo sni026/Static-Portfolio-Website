@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import s from '../assets/s.png'
 import './Navbar.css'
+import s from '../assets/s-logo.png'
 
 const NAV_LINKS = [
   { label: 'About',      href: '#about' },
